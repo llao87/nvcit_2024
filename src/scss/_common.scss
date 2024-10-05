@@ -5,46 +5,58 @@
     margin: 0;
     color: $textBlack;
 }
+
 a {
     color: inherit;
     text-decoration: none;
 }
 
-html
-{
+html {
     font-size: 10px;
-    
-    @media screen and (orientation: landscape) {    
+
+    @media screen and (orientation: landscape) {
         font-size: 0.520835vw;
     }
+
     // @media screen and (orientation: portrait) {    
     //     font-size: 2vh;
     // }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 2;
     font-weight: bold;
 }
+
 h1 {
     font-size: 3.2rem;
 }
+
 h2 {
     font-size: 2.4rem;
 }
+
 h3 {
     font-size: 1.872rem;
 }
+
 h4 {
     font-size: 1.6rem;
 }
+
 h5 {
     font-size: 1.328rem;
 }
+
 h6 {
     font-size: 1.072rem;
 }
-    
+
 
 .container {
     position: relative;
@@ -60,6 +72,14 @@ h6 {
     border-radius: 0.6rem;
     transition: all 0.3s linear;
 }
+
+.btn--border {
+    border: 0.2rem solid transparent;
+    border-image: $greenBlueGradient;
+    border-image-slice: 1;
+    border-radius: 0.6rem;
+}
+
 .btn--green {
     background-color: $green;
     color: #fff;
@@ -68,6 +88,7 @@ h6 {
         background-color: $greenHover;
     }
 }
+
 .banner {
     position: relative;
     border-radius: 0.6rem;

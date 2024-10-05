@@ -10,24 +10,33 @@ header {
       .offices {
         font-size: 1.6rem;
         font-weight: 400;
-        padding: 0.4rem 1.6rem;
+        padding: 0.4rem 2.2rem;
+        letter-spacing: 0.025rem;
         border-right: thin solid $lightGray;
       }
 
       .email {
+        color: $textBlack;
         font-size: 1.6rem;
         font-weight: 400;
-        padding: 0.4rem 1.6rem;
+        padding: 0.4rem 2.2rem;
         border-right: thin solid $lightGray;
         letter-spacing: 0.025rem;
+        transition: all 0.3s linear;
+        &:hover {
+          color: $textBlue;
+        }
       }
 
       .phone {
         font-size: 1.6rem;
         font-weight: 400;
-        padding: 0.4rem 1.6rem;
+        padding: 0.4rem 2.2rem;
         border-right: thin solid $lightGray;
-        letter-spacing: -0.05rem;
+        transition: all 0.3s linear;
+        &:hover {
+          color: $textBlue;
+        }
       }
 
       .search-btn {
@@ -53,8 +62,7 @@ header {
         flex: none;
         margin: -2rem 0 0 0;
 
-        img {
-        }
+        img {}
       }
 
       .menu {
@@ -68,15 +76,14 @@ header {
           padding: 0;
 
           .menu_item {
-            margin: 0 1.6rem;
-
+            
             .menu_link {
               font-size: 2rem;
               transition: all 0.3s linear;
               font-weight: 500;
 
               &:hover {
-                color: #13a2ed;
+                color: $textBlue;
               }
             }
 
