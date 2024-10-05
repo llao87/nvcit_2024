@@ -40,7 +40,31 @@
                     }
                 }
 
-                .controls {}
+                .controls {
+                    position: absolute;
+                    height: 0;
+                    width: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .slick-arrow {
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: $lightGreen;
+                        &.slick-arrow--prev {
+                            &::after {
+                                display: block;
+                                position: absolute;
+                                content: '';
+                                width: 100%;
+                                height: 100%;
+                                background-image: url(/images/);
+                            }
+                        }
+                        &.slick-arrow--next {}
+                    }
+                }
             }
 
             .promo_aside {
@@ -76,7 +100,7 @@
                         font-size: 3.4rem;
                         z-index: 5;
                         font-weight: bold;
-                        letter-spacing: -0.1rem;
+                        letter-spacing: 0.15rem;
                     }
 
                     .banner-subtitle {
@@ -85,7 +109,7 @@
                         left: 3rem;
                         font-size: 1.8rem;
                         z-index: 5;
-                        letter-spacing: -0.1rem;
+                        letter-spacing: 0.15rem;
                     }
                 }
 
@@ -102,7 +126,7 @@
                         font-size: 3.4rem;
                         z-index: 5;
                         font-weight: bold;
-                        letter-spacing: -0.1rem;
+                        letter-spacing: 0.15rem;
                     }
                 }
             }
