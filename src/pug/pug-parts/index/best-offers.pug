@@ -5,26 +5,90 @@ section.best-offers
 
             .tags-wrap
                 ul.tags
-                    li.tag.js__tag(data-section-id="0") Для бизнеса
+                    li.tag.active.js__tag(data-section-id="0") Для бизнеса
                     li.tag.js__tag(data-section-id="0") Для банков
                     li.tag.js__tag(data-section-id="0") Для частных клиентов
                     li.tag.js__tag(data-section-id="0") Решения и сервисы
 
-                .btn.btn--calculator Калькулятор услуг
+                .btn.btn--calculator 
+                    img.icon(src="/images/icon-calc.svg")
+                    span.caption Калькулятор услуг
 
     .offers-carousel 
         .container
             .offers-slider-wrap.js__offers-slider
                 .slider
-                    .slide
-                        .title Автоматизированные системы управленческого и бухучета
-                        .description Бесперебойное обеспечение работы всей IT инфраструктуры
-                    .slide
-                        .title Видеоконференцсвязь
-                        .description Бесперебойное обеспечение работы всей IT инфраструктуры
-                    .slide
-                        .title Корпоративная почта 
-                        .description Бесперебойное обеспечение работы всей IT инфраструктуры
+                    a.slide(href="#")
+                        .info
+                            .title Автоматизированные системы управленческого и бухучета
+                            .description Бесперебойное обеспечение работы всей IT инфраструктуры
+                        .photo(style="background-image:url(/images/service-picture-01.jpg)")
+
+                    a.slide(href="#")
+                        .info
+                            .title Видеоконференцсвязь
+                            .description Бесперебойное обеспечение работы всей IT инфраструктуры
+                        .photo(style="background-image:url(/images/service-picture-02.jpg)")
+
+                    a.slide(href="#")
+                        .info
+                            .title Корпоративная почта 
+                            .description Бесперебойное обеспечение работы всей IT инфраструктуры
+                        .photo(style="background-image:url(/images/service-picture-03.jpg)")
+
+                    a.slide(href="#")
+                        .info
+                            .title Автоматизированные системы управленческого и бухучета
+                            .description Бесперебойное обеспечение работы всей IT инфраструктуры
+                        .photo(style="background-image:url(/images/service-picture-04.jpg)")
+
+                    a.slide(href="#")
+                        .info
+                            .title Видеоконференцсвязь
+                            .description Бесперебойное обеспечение работы всей IT инфраструктуры
+                        .photo(style="background-image:url(/images/service-picture-01.jpg)")
+
+                    a.slide(href="#")
+                        .info
+                            .title Корпоративная почта 
+                            .description Бесперебойное обеспечение работы всей IT инфраструктуры
+                        .photo(style="background-image:url(/images/service-picture-02.jpg)")
                 .controls
-                .links 
-                    .btn.btn--blue.btn--all-services Все услуги
+
+    .offers-categories 
+        .container 
+            .links 
+                .btn.btn--blue.btn--all-services Все услуги
+
+        .categories-wrap
+            .container
+                .categories
+                    a.category(href="#")
+                        .icon
+                            img(src="/images/icon-portfel.svg")
+                        .title Решения для бизнеса
+
+                    a.category(href="#")
+                        .icon
+                            img(src="/images/icon-clouds.svg")
+                        .title Облачная инфраструктура
+
+                    a.category(href="#")
+                        .icon
+                            img(src="/images/icon-servers.svg")
+                        .title Инженерная инфраструктура
+
+                    a.category(href="#")
+                        .icon
+                            img(src="/images/icon-network.svg")
+                        .title Телекоммуникационная инфраструктура
+
+                    a.category(href="#")
+                        .icon
+                            img(src="/images/icon-shield.svg")
+                        .title Информационная безопасность
+
+                    a.category(href="#")
+                        .icon
+                            img(src="/images/icon-file.svg")
+                        .title Инфраструктурные программные решения
